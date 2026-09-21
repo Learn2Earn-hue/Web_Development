@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed | Front-End Web Developer</title>
+  <meta name="description" content="Portfolio of Ahmed, a front-end web developer building clear, fast and responsive websites with HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#3346FF">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand" aria-label="Ahmed, back to top">
+        <span class="nav__logo">S</span>
+        <span>Ahmed</span>
+      </a>
+
+      <nav class="nav__menu" id="nav-menu" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__hello">Hi, I'm Ahmed.</p>
+          <h1 class="hero__title">I build clear, fast websites that people enjoy using.</h1>
+          <p class="hero__tagline">Front-end developer turning ideas into responsive pages with HTML, CSS and JavaScript.</p>
+          <a href="#projects" class="btn btn--primary">See my work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="hero__art">
+          <img src="assets/img/hero.svg" alt="Illustration of a developer working at a laptop surrounded by code symbols" width="560" height="560">
+          <span class="chip chip--a"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</span>
+          <span class="chip chip--b"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</span>
+          <span class="chip chip--c"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__card">
+          <img src="assets/img/avatar.svg" alt="Portrait illustration of Ahmed" width="360" height="360" loading="lazy">
+          <ul class="about__facts">
+            <li><i class="fa-solid fa-code" aria-hidden="true"></i><span><strong>Focus</strong> Front-end development</span></li>
+            <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span><strong>Learning</strong> The Sky Gen web development program</span></li>
+            <li><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span><strong>Open to</strong> Internships and freelance work</span></li>
+          </ul>
+        </div>
+
+        <div class="about__text">
+          <h2 class="section__title">About me</h2>
+          <p>I'm Ahmed, a front-end web developer who enjoys turning rough ideas into clean, fast and friendly websites. I started with a single HTML file and never stopped building: I now work comfortably with semantic HTML, modern CSS layouts and vanilla JavaScript.</p>
+          <p>I care about details like spacing, readable type and how a page feels on a small phone screen. I'm currently learning through The Sky Gen web development program, where every project pushes me to write cleaner code and ship real work. When I'm not coding, I sketch layouts, read about design, and look for the next problem worth solving on the web.</p>
+
+          <div class="about__tiles">
+            <div class="tile"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i><h3>Design</h3><p>Layouts with clear hierarchy and honest spacing.</p></div>
+            <div class="tile"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><h3>Build</h3><p>Semantic, accessible code that is easy to maintain.</p></div>
+            <div class="tile"><i class="fa-solid fa-rocket" aria-hidden="true"></i><h3>Ship</h3><p>Version-controlled and deployed to a live URL.</p></div>
+          </div>
+
+          <a href="assets/cv/tsg-webdev-p01-Ahmed-cv.pdf" class="btn btn--outline" download>
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lead">The tools I use every day, and how comfortable I am with each one.</p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="skill">
+            <div class="skill__top"><i class="fa-brands fa-html5" aria-hidden="true"></i><h3>HTML5</h3><span class="skill__pct">90%</span></div>
+            <div class="bar" role="progressbar" aria-label="HTML5 skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span class="bar__fill" data-level="90"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i><h3>CSS3</h3><span class="skill__pct">85%</span></div>
+            <div class="bar" role="progressbar" aria-label="CSS3 skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span class="bar__fill" data-level="85"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-brands fa-js" aria-hidden="true"></i><h3>JavaScript (ES6)</h3><span class="skill__pct">70%</span></div>
+            <div class="bar" role="progressbar" aria-label="JavaScript skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span class="bar__fill" data-level="70"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-solid fa-table-columns" aria-hidden="true"></i><h3>Flexbox &amp; Grid</h3><span class="skill__pct">85%</span></div>
+            <div class="bar" role="progressbar" aria-label="Flexbox and Grid skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span class="bar__fill" data-level="85"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><h3>Responsive design</h3><span class="skill__pct">88%</span></div>
+            <div class="bar" role="progressbar" aria-label="Responsive design skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88"><span class="bar__fill" data-level="88"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-brands fa-git-alt" aria-hidden="true"></i><h3>Git &amp; GitHub</h3><span class="skill__pct">75%</span></div>
+            <div class="bar" role="progressbar" aria-label="Git and GitHub skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span class="bar__fill" data-level="75"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-brands fa-figma" aria-hidden="true"></i><h3>Figma</h3><span class="skill__pct">60%</span></div>
+            <div class="bar" role="progressbar" aria-label="Figma skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span class="bar__fill" data-level="60"></span></div>
+          </article>
+          <article class="skill">
+            <div class="skill__top"><i class="fa-solid fa-universal-access" aria-hidden="true"></i><h3>Accessibility</h3><span class="skill__pct">65%</span></div>
+            <div class="bar" role="progressbar" aria-label="Accessibility skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><span class="bar__fill" data-level="65"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__lead">A few things I've built while learning. Each one taught me something new about structure, layout or JavaScript.</p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="card">
+            <div class="card__media"><img src="assets/img/project-1.svg" alt="Preview of the Weather Now app showing a sun and temperature card" width="600" height="380" loading="lazy"></div>
+            <div class="card__body">
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <h3>Weather Now</h3>
+              <p>A clean weather dashboard with a city search and a five-day forecast, built with vanilla JavaScript.</p>
+              <a href="https://github.com/yourusername/weather-now" class="card__link" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="assets/img/project-2.svg" alt="Preview of the Task Board app showing three columns of cards" width="600" height="380" loading="lazy"></div>
+            <div class="card__body">
+              <ul class="tags"><li>HTML</li><li>CSS Grid</li><li>JavaScript</li></ul>
+              <h3>Task Board</h3>
+              <p>A drag-friendly kanban board with To do, Doing and Done columns that remembers your tasks.</p>
+              <a href="https://github.com/yourusername/task-board" class="card__link" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="assets/img/project-3.svg" alt="Preview of the Cafe landing page with a hero and menu cards" width="600" height="380" loading="lazy"></div>
+            <div class="card__body">
+              <ul class="tags"><li>HTML</li><li>Flexbox</li><li>Responsive</li></ul>
+              <h3>Cafe Landing Page</h3>
+              <p>A warm, mobile-first landing page for a local cafe with a menu grid and opening hours.</p>
+              <a href="https://github.com/yourusername/cafe-landing" class="card__link" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="assets/img/project-4.svg" alt="Preview of the Budget Tracker with a bar chart and expense list" width="600" height="380" loading="lazy"></div>
+            <div class="card__body">
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <h3>Budget Tracker</h3>
+              <p>Add income and expenses, see your balance update instantly and spot where the money goes.</p>
+              <a href="https://github.com/yourusername/budget-tracker" class="card__link" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="assets/img/project-5.svg" alt="Preview of the Photo Gallery with a masonry grid of image tiles" width="600" height="380" loading="lazy"></div>
+            <div class="card__body">
+              <ul class="tags"><li>HTML</li><li>CSS Grid</li><li>Lightbox</li></ul>
+              <h3>Photo Gallery</h3>
+              <p>A responsive masonry gallery with a keyboard-friendly lightbox for viewing images full screen.</p>
+              <a href="https://github.com/yourusername/photo-gallery" class="card__link" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media"><img src="assets/img/project-6.svg" alt="Preview of the Quiz Game with a question and four answer buttons" width="600" height="380" loading="lazy"></div>
+            <div class="card__body">
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <h3>Quiz Game</h3>
+              <p>A timed multiple-choice quiz that tracks your score and shows which answers you missed.</p>
+              <a href="https://github.com/yourusername/quiz-game" class="card__link" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Let's work together</h2>
+          <p class="section__lead">Have a project, an internship or just a question? Send a message and I'll reply within two days.</p>
+        </div>
+
+        <div class="contact__grid">
+          <form class="form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Your full name" aria-describedby="name-error">
+              <p class="field__error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" aria-describedby="email-error">
+              <p class="field__error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me a little about your project" aria-describedby="message-error"></textarea>
+              <p class="field__error" id="message-error" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn btn--primary">Send message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact__info">
+            <h3>Prefer a direct line?</h3>
+            <p>Email works best. You can also find me on these platforms.</p>
+            <a class="contact__mail" href="mailto:mahmedejazqureshi@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> mahmedejazqureshi@gmail.com</a>
+            <ul class="social">
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Ahmed. All rights reserved.</p>
+      <ul class="social social--small">
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
