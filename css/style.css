@@ -400,13 +400,16 @@ p { margin: 0 0 1em; }
 .form__status { margin: 1rem 0 0; font-weight: 600; color: #1a9b5b; }
 
 .contact__info {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 2rem;
+  box-shadow: var(--shadow);
 }
+
 .contact__info h3 { font-size: 1.5rem; }
-.contact__info p { color: color-mix(in srgb, var(--bg) 75%, transparent); }
+.contact__info p { color: var(--muted); }
 .contact__mail {
   display: flex;
   align-items: center;
